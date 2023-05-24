@@ -7,10 +7,7 @@ import lombok.Generated;
 @Data
 @AllArgsConstructor
 @Generated
-public class TransactionDto {
-    private int id;
-    private int origen;
-    private int destination;
-    private int amount;
-
+public class DepositMoneyUserDto {
+    private int moneyAmount;
+    private int accountNumber;
 }

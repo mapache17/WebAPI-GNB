@@ -7,7 +7,7 @@ import lombok.Generated;
 @Data
 @AllArgsConstructor
 @Generated
-public class UserDTO {
+public class UserDto {
     private int document;
     private String name;
     private String lastName;

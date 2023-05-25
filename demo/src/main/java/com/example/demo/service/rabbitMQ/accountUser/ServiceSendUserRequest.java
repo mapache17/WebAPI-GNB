@@ -50,7 +50,10 @@ public class ServiceSendUserRequest {
     public List<UserResponseDTO> getUsers() throws JsonProcessingException {
         /*rabbitTemplate.setMessageConverter(jackson2JsonMessageConverter());
         rabbitTemplate.convertAndSend("plantaFila","Alerta", sensorsDto);
+
         rabbitTemplate.convertAndSend("plantaFila","Registro", sensorsDto);*/
+        System.out.println("Holaaaa");
+
         List<UserResponseDTO> lista= new ArrayList<>();
         UserResponseDTO user1=new UserResponseDTO(23,"pepito", "perez","100-23-45");
         UserResponseDTO user2=new UserResponseDTO(45,"lupe","gutierrez","45-67-89");

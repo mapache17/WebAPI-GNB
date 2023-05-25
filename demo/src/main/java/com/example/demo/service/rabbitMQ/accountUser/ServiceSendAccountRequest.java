@@ -36,9 +36,12 @@ public class ServiceSendAccountRequest {
         /*rabbitTemplate.setMessageConverter(jackson2JsonMessageConverter());
         rabbitTemplate.convertAndSend("plantaFila","Alerta", sensorsDto);
         rabbitTemplate.convertAndSend("plantaFila","Registro", sensorsDto);*/
+        //Comentario de prueba
         return new AccountResponseDTO(2,"corriente",5678,"22-233-44",12);
     }
     public AccountResponseDTO checkBalance (int idAccount) throws JsonProcessingException {
+        //COmentario prueba
+        System.out.println("Hola");
         /*rabbitTemplate.setMessageConverter(jackson2JsonMessageConverter());
         rabbitTemplate.convertAndSend("plantaFila","Alerta", sensorsDto);
         rabbitTemplate.convertAndSend("plantaFila","Registro", sensorsDto);*/

@@ -27,10 +27,12 @@ public class ServiceSendTransactionRequest {
     private ObjectMapper objectMapper;
 
     public String convertBodytoToString(TransactionDto transactionDto) throws JsonProcessingException {
+        System.out.println("Hola");
         return objectMapper.writeValueAsString(transactionDto);
     }
 
     public TransactionResponseDTO sendTransactionRequest(TransactionDto transactionDto) throws JsonProcessingException {
+        System.out.println("Hola");
         /*rabbitTemplate.setMessageConverter(jackson2JsonMessageConverter());
         rabbitTemplate.convertAndSend("plantaFila","Alerta", sensorsDto);
         rabbitTemplate.convertAndSend("plantaFila","Registro", sensorsDto);*/
